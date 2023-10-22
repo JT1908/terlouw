@@ -1,0 +1,12 @@
+@import "root.css";
+@import "reset.css";
+@import "utilities.css";
+
+@import "/css/layout/base.css";
+@import "/css/layout/header.css";
+@import "/css/layout/footer.css";
+
+@import "/css/sections/section__hero.css";
+@import "/css/sections/section__berichten.css";
+@import "/css/sections/section__portfolio.css";
+@import "/css/sections/section__contact.css";
