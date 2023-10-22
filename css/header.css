@@ -79,11 +79,9 @@
 	display: flex;
 	flex-direction: column;
 	gap: var(--spacer-300);
-	align-items: center;
-	justify-content: center;
-	height: calc((100vh + 1.1rem) - (var(--header-height) * 2));
+	height: 100vh;
 	width: 65%;
-	padding-block: var(--spacer-600);
+	padding-block-start: var(--spacer-400);
 	background-color: var(--color-primary);
 	box-shadow: 0 2px 8px 0 var(--color-primary);
 }
