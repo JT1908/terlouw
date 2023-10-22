@@ -6,7 +6,7 @@ const mobileLinks = document.querySelectorAll(".nav__link");
 mobileLinks.forEach((link) => {
 	link.addEventListener("click", () => {
 		menuToggle.setAttribute("aria-expanded", "false");
-		siteNavigation.setAttribute("data-state", "closed");
+		siteNavigation.setAttribute("data-state", "closing");
 		noScroll.classList.remove("no-scroll");
 	});
 });
