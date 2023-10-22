@@ -5,6 +5,14 @@ const mobileLinks = document.querySelectorAll(".nav__link");
 
 console.log(mobileLinks);
 
+mobileLinks.forEach((link) => {
+	link.addEventListener("click", () => {
+		menuToggle.setAttribute("aria-expanded", "false");
+		siteNavigation.setAttribute("data-state", "closing");
+		noScroll.classList.remove("no-scroll");
+	});
+});
+
 menuToggle.addEventListener("click", () => {
 	const isOpened = menuToggle.getAttribute("aria-expanded") === "true";
 	if (isOpened ? closeMenu() : openMenu());
