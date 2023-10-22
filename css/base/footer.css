@@ -1,5 +1,5 @@
 .primary-footer {
-	background-color: var(--color-primary);
+	background-color: var(--color-primary-400);
 }
 
 .secondary-navigation {
@@ -17,5 +17,5 @@
 .footer__text {
 	display: flex;
 	justify-content: center;
-	color: var(--color-primary-400);
+	color: var(--color-secondary-400);
 }
