@@ -12,6 +12,35 @@
 	gap: var(--gap);
 }
 
+.secondary-nav__link {
+	position: relative;
+	font-size: var(--fs-nav);
+	padding-block: var(--spacer-200);
+	color: var(--color-secondary);
+	transition: all ease 250ms;
+}
+
+.secondary-nav__link:hover {
+	color: var(--color-secondary-400);
+}
+
+.secondary-nav__link::after {
+	content: "";
+	position: absolute;
+	bottom: 12px;
+	left: 50%;
+	height: 2px;
+	width: 0;
+	background: transparent;
+	transition: all ease 250ms;
+}
+
+.secondary-nav__link:hover::after {
+	width: 100%;
+	left: 0;
+	background: var(--color-primary-200);
+}
+
 .footer__text {
 	display: flex;
 	justify-content: center;
