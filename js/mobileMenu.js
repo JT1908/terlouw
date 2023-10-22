@@ -1,6 +1,6 @@
 const menuToggle = document.querySelector(".menu-toggle");
 const siteNavigation = document.querySelector(".primary-navigation-list");
-const noScroll = document.querySelector("body");
+const noScroll = document.querySelector("html");
 const mobileLinks = document.querySelectorAll(".nav__link");
 
 console.log(mobileLinks);

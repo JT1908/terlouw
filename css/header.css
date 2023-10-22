@@ -84,6 +84,7 @@
 	padding-block: var(--spacer-600);
 	width: 50%;
 	background-color: var(--color-primary);
+	border-bottom-left-radius: var(--border-radius);
 }
 
 .primary-navigation-list li {
