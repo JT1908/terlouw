@@ -1,5 +1,5 @@
 .primary-header {
-	position: sticky;
+	position: fixed;
 	top: 0;
 	width: 100%;
 	background-color: var(--color-primary);
@@ -80,10 +80,11 @@
 	display: grid;
 	align-content: space-evenly;
 	gap: var(--spacer-300);
-	padding-block: var(--spacer-600);
 	width: 50%;
+	padding-block: var(--spacer-600);
 	background-color: var(--color-primary);
 	border-bottom-left-radius: var(--border-radius);
+	box-shadow: 0 2px 8px 0 var(--color-primary);
 }
 
 .primary-navigation-list li {

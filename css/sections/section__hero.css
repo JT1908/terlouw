@@ -1,5 +1,6 @@
 .section__hero {
 	position: relative;
+	margin-block-start: var(--header-height);
 }
 
 .hero__text {
