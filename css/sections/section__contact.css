@@ -18,7 +18,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-block-end: var(--spacer-100);
+	margin-block-end: var(--spacer-200);
 }
 
 .contact__container label {

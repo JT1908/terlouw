@@ -13,7 +13,7 @@ body {
 
 header,
 footer {
-	padding-block: var(--spacer-200);
+	padding-block: var(--spacer-300);
 }
 
 section {
