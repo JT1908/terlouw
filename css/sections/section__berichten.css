@@ -1,0 +1,15 @@
+.article__title {
+    font-size: var(--fs-400);
+    line-height: 1;
+}
+
+.article__author {
+    margin-block-end: var(--spacer-100);
+    font-size: var(--fs-100);
+}
+
+.article__preview {
+    margin-block-end: var(--spacer-200);
+    font-size: var(--fs-300);
+    line-height: 1.2;
+}
