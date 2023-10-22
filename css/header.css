@@ -1,6 +1,7 @@
 .primary-header {
-	position: sticky;
+	position: fixed;
 	top: 0;
+	width: 100%;
 	background-color: var(--color-primary);
 	box-shadow: 0 2px 8px 0 var(--color-primary);
 	z-index: 999;
@@ -74,13 +75,11 @@
 
 .primary-navigation-list {
 	position: absolute;
-	top: calc(var(--header-height) - 1.5rem);
-	bottom: 0;
+	top: calc(var(--header-height) - 1.1rem);
 	right: -1rem;
 	display: grid;
 	align-content: space-evenly;
-	margin: 0;
-	padding-inline: 0;
+	gap: var(--spacer-300);
 	padding-block: var(--spacer-600);
 	width: 50%;
 	background-color: var(--color-primary);
