@@ -1,0 +1,73 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	position: relative;
+	background-color: var(--color-secondary);
+	font-family: var(--ff-secondary);
+	font-size: var(--fs-300);
+	line-height: 1.4;
+	overflow-x: hidden;
+}
+
+header,
+footer {
+	padding-block: var(--spacer-200);
+}
+
+section {
+	padding-block: var(--spacer-500);
+}
+
+article {
+	padding-block: var(--spacer-200);
+	padding-inline: var(--spacer-200);
+	background-color: var(--color-secondary-200);
+	color: var(--color-primary-400);
+	border-radius: var(--border-radius);
+}
+
+article p {
+	max-width: 50ch;
+}
+
+footer {
+	padding-block-end: var(--spacer-200);
+}
+
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+h1,
+h2 {
+	margin-block-end: var(--spacer-200);
+	font-family: var(--ff-primary);
+	text-transform: uppercase;
+	color: var(--color-primary-400);
+}
+
+h1 {
+	font-size: clamp(var(--fs-400), 5vw, var(--fs-600));
+}
+
+h2 {
+	font-size: clamp(var(--fs-300), 5vw, var(--fs-500));
+}
+
+@media (min-width: 50em) {
+	body {
+		font-size: var(--fs-500);
+	}
+
+	.wrapper {
+		padding-inline: var(--spacer-300);
+	}
+}
