@@ -92,14 +92,13 @@
 
 .primary-navigation-list {
 	position: absolute;
-	top: calc(var(--header-height) - 2rem);
-	right: -1rem;
-	left: -1rem;
+	top: calc(var(--header-height) - 1.7rem);
+	right: -2rem;
+	left: -2rem;
 	display: flex;
 	flex-direction: column;
 	gap: var(--spacer-300);
-	padding-block-start: var(--spacer-400);
-	padding-block-end: var(--spacer-700);
+	padding-block: var(--spacer-700);
 	background-color: var(--color-primary-400);
 	box-shadow: 0 2px 8px 0 var(--color-primary-400);
 }
