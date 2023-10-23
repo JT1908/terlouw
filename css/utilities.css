@@ -71,10 +71,6 @@
 	color: var(--color-primary);
 }
 
-.light {
-	color: white;
-}
-
 /* Diagonal section */
 .diagonal {
 	--skew-angle: -4deg;
