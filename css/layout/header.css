@@ -102,10 +102,10 @@
 	gap: var(--spacer-300);
 	padding-block-start: var(--spacer-500);
 	height: calc(100vh - var(--header-height));
-	background: linear-gradient(
-		180deg,
+	background-image: linear-gradient(
+		to bottom,
 		var(--color-primary-400) 60%,
-		var(--color-primary-200)
+		var(--color-primary-300)
 	);
 	box-shadow: 0 2px 8px 0 var(--color-primary-400);
 	text-transform: uppercase;
