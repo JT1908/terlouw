@@ -99,18 +99,19 @@
 	left: -2rem;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	gap: var(--spacer-300);
+	padding-block-start: var(--spacer-500);
 	height: calc(100vh - var(--header-height));
 	background-color: var(--color-primary-400);
 	box-shadow: 0 2px 8px 0 var(--color-primary-400);
+	text-transform: uppercase;
 }
 
 .primary-navigation-list li {
 	width: max-content;
 	margin-inline: auto;
 	text-align: center;
-	border-bottom: 1px solid white;
+	border-bottom: 1px solid var(--color-primary-200);
 }
 
 .nav__link {
