@@ -3,7 +3,6 @@ html {
 }
 
 body {
-	position: relative;
 	background-color: var(--color-secondary);
 	font-family: var(--ff-secondary);
 	font-size: var(--fs-300);

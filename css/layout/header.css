@@ -57,7 +57,7 @@
 	display: block;
 	background-color: var(--color-secondary);
 	height: 3px;
-	width: var(--spacer-300);
+	width: var(--spacer-400);
 	border-radius: 10px;
 	transition: all 400ms ease-in-out;
 }
@@ -72,6 +72,7 @@
 
 [aria-expanded="true"] .hamburger {
 	transform: rotate(45deg);
+	background-color: var(--color-primary-200);
 }
 
 [aria-expanded="true"] .hamburger::before {
@@ -80,6 +81,7 @@
 
 [aria-expanded="true"] .hamburger::after {
 	transform: translateY(-3px) rotate(-90deg);
+	background-color: var(--color-primary-200);
 }
 
 .primary-navigation {
@@ -92,13 +94,14 @@
 
 .primary-navigation-list {
 	position: absolute;
-	top: calc(var(--header-height) - 1.7rem);
+	top: calc((var(--header-height) - var(--spacer-300)) - 0.1rem);
 	right: -2rem;
 	left: -2rem;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	gap: var(--spacer-300);
-	padding-block: var(--spacer-700);
+	height: calc(100vh - var(--header-height));
 	background-color: var(--color-primary-400);
 	box-shadow: 0 2px 8px 0 var(--color-primary-400);
 }
@@ -140,11 +143,11 @@
 }
 
 .primary-navigation-list[data-state="opened"] {
-	animation: menuOpen 750ms ease-in-out forwards;
+	animation: menuOpen 550ms ease-in-out forwards;
 }
 
 .primary-navigation-list[data-state="closing"] {
-	animation: menuClose 750ms ease-in-out forwards;
+	animation: menuClose 550ms ease-in-out forwards;
 }
 
 .primary-navigation-list[data-state="closed"] {
