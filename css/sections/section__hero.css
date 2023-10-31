@@ -6,7 +6,7 @@
 .hero__text {
 	background-color: rgb(20, 70, 103, 0.8);
 	backdrop-filter: blur(5px);
-	padding: var(--spacer-200);
+	padding: var(--spacer-300);
 	border-radius: var(--border-radius);
 }
 
@@ -39,7 +39,8 @@
 .hero__text p {
 	margin-block-end: var(--spacer-200);
 	color: var(--color-secondary-200);
-	line-height: 1.3;
+	line-height: 1.2;
+	font-size: var(--fs-300);
 }
 
 .hero__image {
@@ -52,4 +53,10 @@
 	background-size: cover;
 	background-position: center;
 	z-index: -1;
+}
+
+@media (min-width: 45em) {
+	.hero__text {
+		max-width: var(--container-width);
+	}
 }

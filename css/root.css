@@ -42,14 +42,30 @@
 
 	/* Border radius */
 	--border-radius: 0.75em;
+
+	/* Container widths */
+	--container-width: min(100%, 35rem);
+
+	/* Gradients */
+	--background-gradient: linear-gradient(45deg, #144667, #144667, #4284af);
 }
 
-@media (min-width: 50em) {
+@media (min-width: 45em) {
 	:root {
 		/* Font sizes */
-		--fs-nav: 1.4rem;
+		--fs-nav: 1.3rem;
 
 		/* Gaps */
 		--gap: 1.5rem;
+	}
+}
+
+@media (min-width: 55em) {
+	:root {
+		/* Font sizes */
+		--fs-nav: 1.45rem;
+
+		/* Gaps */
+		--gap: 1.8rem;
 	}
 }

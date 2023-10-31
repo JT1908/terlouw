@@ -6,10 +6,9 @@
 }
 
 .section__contact form {
-	padding-block-start: var(--spacer-200);
-	padding-block-end: var(--spacer-100);
-	padding-inline: var(--spacer-200);
-	background-color: var(--color-secondary-200);
+	padding-block: var(--spacer-400);
+	padding-inline: var(--spacer-300);
+	background-image: var(--background-gradient);
 	color: var(--color-primary-400);
 	border-radius: var(--border-radius);
 }
@@ -21,8 +20,13 @@
 	margin-block-end: var(--spacer-200);
 }
 
+.contact__container:last-child {
+	margin-block-end: 0;
+}
+
 .contact__container label {
 	font-weight: 700;
+	color: var(--color-secondary);
 }
 
 .contact__container input,
@@ -34,4 +38,21 @@
 	outline: 0;
 	color: var(--color-primary-400);
 	border-radius: var(--border-radius);
+}
+
+@media (min-width: 45em) {
+	.section__contact form {
+		margin-block-start: var(--spacer-300);
+		width: var(--container-width);
+	}
+}
+
+@media (min-width: 55em) {
+	.section__contact form {
+		width: calc(var(--container-width) * 1.4);
+	}
+
+	.contact__container input[type="submit"] {
+		max-width: 40%;
+	}
 }

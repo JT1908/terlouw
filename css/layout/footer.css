@@ -22,13 +22,13 @@
 }
 
 .secondary-nav__link:hover {
-	color: var(--color-secondary-400);
+	color: var(--color-primary-200);
 }
 
 .secondary-nav__link::after {
 	content: "";
 	position: absolute;
-	bottom: 12px;
+	bottom: 15px;
 	left: 50%;
 	height: 2px;
 	width: 0;
@@ -39,11 +39,20 @@
 .secondary-nav__link:hover::after {
 	width: 100%;
 	left: 0;
-	background: var(--color-primary-200);
+	background: var(--color-secondary);
+	border-radius: var(--border-radius);
+	opacity: 0.7;
 }
 
 .footer__text {
 	display: flex;
 	justify-content: center;
 	color: var(--color-secondary-400);
+	font-size: var(--fs-200);
+}
+
+@media (min-width: 45em) {
+	.footer__text {
+		font-size: var(--fs-300);
+	}
 }

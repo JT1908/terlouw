@@ -15,15 +15,15 @@
 </head>
 <body>
     <header class="primary-header">
-        <div class="wrapper">                
+        <div class="wrapper">
+            <div class="nav-wrapper">
+                <a href="index.html">
+                    <div class="logo">
+                        <p class="logo__top">Terlouw</p>
+                        <p class="logo__bottom"><span>Front-end</span> Dev</p>
+                    </div>
+                </a> 
                 <nav class="primary-navigation">
-                    <a href="index.html">
-                        <div class="logo">
-                            <p class="logo__top">Terlouw</p>
-                            <p class="logo__bottom"><span>Front-end</span> Dev</p>
-                        </div>
-                    </a> 
-
                     <button class="menu-toggle" aria-controls="primary-navigation-list" aria-expanded="false">
                         <span class="visually-hidden">Menu</span>
                         <div class="hamburger" aria-hidden="true"></div>
@@ -36,6 +36,7 @@
                         <li><a href="#contact" class="nav__link">Contact</a></li>
                     </ul>
                 </nav>
+            </div>                
         </div>
     </header>
 
@@ -57,20 +58,56 @@
         <section id="berichten" class="section__berichten">
             <div class="wrapper">
                 <h2 class="subtitle">Berichten <i class="fa-regular fa-message"></i></h2>
-                <article>
-                    <h3 class="article__title">Nieuwe website online</h3>
-                    <p class="article__author">Geschreven door: <span>Jos Terlouw</span></p>
-                    <p class="article__preview">Vandaag is mijn nieuwe persoonlijke website gelanceerd. Deze website is gemaakt met HTML, CSS en JavaScript...</p>
-                    <a href="#" class="btn btn-cta">Lees verder <i class="fa-solid fa-arrow-right"></i></a>
-                </article>
+                <div class="article__container">
+                    <article class="article">
+                        <h3 class="article__title">Nieuwe website online</h3>
+                        <p class="article__author">Geschreven door: <span>Jos Terlouw</span></p>
+                        <p class="article__preview">Vandaag is mijn nieuwe persoonlijke website gelanceerd. Deze website is gemaakt met HTML, CSS en JavaScript...</p>
+                        <a href="#" class="btn btn-cta">Lees verder <i class="fa-solid fa-arrow-right"></i></a>
+                    </article>
+                    <article class="article">
+                        <h3 class="article__title">Nieuwe website online</h3>
+                        <p class="article__author">Geschreven door: <span>Jos Terlouw</span></p>
+                        <p class="article__preview">Vandaag is mijn nieuwe persoonlijke website gelanceerd. Deze website is gemaakt met HTML, CSS en JavaScript...</p>
+                        <a href="#" class="btn btn-cta">Lees verder <i class="fa-solid fa-arrow-right"></i></a>
+                    </article>
+                    <article class="article">
+                        <h3 class="article__title">Nieuwe website online</h3>
+                        <p class="article__author">Geschreven door: <span>Jos Terlouw</span></p>
+                        <p class="article__preview">Vandaag is mijn nieuwe persoonlijke website gelanceerd. Deze website is gemaakt met HTML, CSS en JavaScript...</p>
+                        <a href="#" class="btn btn-cta">Lees verder <i class="fa-solid fa-arrow-right"></i></a>
+                    </article>
+                </div>
             </div>
         </section>
     
         <section id ="portfolio" class="section__portfolio diagonal">
             <div class="wrapper">
-                <div class="portfolio">
-                    <h2 class="subtitle light">Portfolio <i class="fa-regular fa-folder-open"></i></h2>
-                    <a href="index.html">
+                <h2 class="subtitle light">Portfolio <i class="fa-regular fa-folder-open"></i></h2>
+                    <div class="portfolio">
+                        <div class="portfolio__container">
+                            <h3 class="portfolio__name">Kiboe Poeldijk</h3>
+                            <img src="images/kiboe.jpg" alt="Website Terlouw Webdesign" class="portfolio__image">
+                            <ul class="portfolio__skillset" role="list">
+                                <li class="portfolio__skill"><i class="fa-brands fa-html5"></i></li>
+                                <li class="portfolio__skill"><i class="fa-brands fa-css3-alt"></i></li>
+                                <li class="portfolio__skill"><i class="fa-brands fa-js"></i></li>
+                                <li class="portfolio__skill"><i class="fa-brands fa-wordpress"></i></li>
+                            </ul>
+                            <p class="portfolio__description">Persoonlijke website van Front-end developer Jos Terlouw. Gemaakt met HTML, CSS, JavaScript en 11ty CMS.</p>
+                        </div>
+
+                        <div class="portfolio__container">
+                            <h3 class="portfolio__name">Vincent Dudart pedicure</h3>
+                            <img src="images/pedicure.jpg" alt="Website Terlouw Webdesign" class="portfolio__image">
+                            <ul class="portfolio__skillset" role="list">
+                                <li class="portfolio__skill"><i class="fa-brands fa-html5"></i></li>
+                                <li class="portfolio__skill"><i class="fa-brands fa-css3-alt"></i></li>
+                                <li class="portfolio__skill"><i class="fa-brands fa-js"></i></li>
+                            </ul>
+                            <p class="portfolio__description">Persoonlijke website van Front-end developer Jos Terlouw. Gemaakt met HTML, CSS, JavaScript en 11ty CMS.</p>
+                        </div>
+
                         <div class="portfolio__container">
                             <h3 class="portfolio__name">Terlouw Front-end Developer</h3>
                             <img src="images/hero_image.jpg" alt="Website Terlouw Webdesign" class="portfolio__image">
@@ -81,9 +118,8 @@
                             </ul>
                             <p class="portfolio__description">Persoonlijke website van Front-end developer Jos Terlouw. Gemaakt met HTML, CSS, JavaScript en 11ty CMS.</p>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            </div>
         </section>
     
         <section id="contact" class="section__contact">

@@ -20,15 +20,14 @@ section {
 }
 
 article {
-	padding-block: var(--spacer-200);
-	padding-inline: var(--spacer-200);
+	padding: var(--spacer-300);
 	background-color: var(--color-secondary-200);
 	color: var(--color-primary-400);
 	border-radius: var(--border-radius);
 }
 
 article p {
-	max-width: 50ch;
+	max-width: 55ch;
 }
 
 footer {
@@ -61,7 +60,7 @@ h2 {
 	font-size: clamp(var(--fs-400), 5vw, var(--fs-500));
 }
 
-@media (min-width: 50em) {
+@media (min-width: 45em) {
 	body {
 		font-size: var(--fs-500);
 	}

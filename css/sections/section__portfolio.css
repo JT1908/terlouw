@@ -3,9 +3,12 @@
 }
 
 .portfolio__container {
-	padding-block-start: var(--spacer-200);
-	padding-block-end: var(--spacer-100);
-	padding-inline: var(--spacer-200);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: var(--container-width);
+	margin-block-end: var(--spacer-400);
+	padding: var(--spacer-300);
 	background-color: var(--color-secondary);
 	border-radius: var(--border-radius);
 	overflow: hidden;
@@ -21,6 +24,8 @@
 }
 
 .portfolio__image {
+	width: var(--container-width);
+	aspect-ratio: 1.5;
 	margin-block-end: var(--spacer-100);
 	border-radius: var(--border-radius);
 }
@@ -41,7 +46,33 @@
 
 .portfolio__description {
 	max-width: 60ch;
-	margin-block-end: var(--spacer-200);
 	color: var(--color-primary-400);
+	font-size: var(--fs-300);
 	line-height: 1.2;
+}
+
+@media (min-width: 45em) {
+	.portfolio {
+		display: flex;
+		justify-content: space-between;
+		gap: var(--spacer-300);
+	}
+
+	.portfolio__container {
+		margin-block-start: var(--spacer-300);
+		max-width: var(--container-width);
+	}
+
+	.portfolio__name {
+		font-size: var(--fs-400);
+		line-height: 1;
+	}
+
+	.portfolio__skillset {
+		margin-block-end: var(--spacer-100);
+	}
+
+	.portfolio__description {
+		line-height: 1.1;
+	}
 }
