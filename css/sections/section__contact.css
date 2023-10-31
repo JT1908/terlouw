@@ -47,7 +47,7 @@
 	}
 }
 
-@media (min-width: 55em) {
+@media (min-width: 60em) {
 	.section__contact form {
 		width: calc(var(--container-width) * 1.4);
 	}

@@ -1,5 +1,5 @@
 .article {
-	background-image: var(--background-gradient);
+	background-color: var(--color-primary-400);
 	margin-block-end: var(--spacer-400);
 	color: var(--color-secondary);
 }
@@ -23,16 +23,18 @@
 	margin-block-end: var(--spacer-200);
 }
 
-@media (min-width: 55em) {
+@media (min-width: 45em) {
 	.article__container {
-		display: flex;
-		justify-content: space-between;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
 		gap: var(--spacer-300);
+		margin-block-start: var(--spacer-400);
 	}
 
 	.article {
-		margin-block-start: var(--spacer-300);
+		margin-block-end: var(--spacer-300);
 		max-width: var(--container-width);
+		box-shadow: var(--container-shadow);
 	}
 
 	.article__author {
@@ -41,5 +43,12 @@
 
 	.article__preview {
 		margin-block-end: var(--spacer-200);
+	}
+}
+
+@media (min-width: 60em) {
+	.article__container {
+		grid-template-columns: repeat(3, 1fr);
+		gap: var(--spacer-500);
 	}
 }
